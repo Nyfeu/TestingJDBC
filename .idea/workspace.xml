@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="526b0395-6f78-47a9-9b2b-42336850277e" name="Changes" comment="Inserção de dados no banco de dados!">
+    <list default="true" id="526b0395-6f78-47a9-9b2b-42336850277e" name="Changes" comment="Inserção de dados no banco de dados - com retorno de Id!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
     </list>
@@ -101,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660519492239</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Inserção de dados no banco de dados - com retorno de Id!">
+      <created>1660519762003</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660519762003</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +126,7 @@
     <MESSAGE value="Abrindo e fechando conexão com o banco de dados." />
     <MESSAGE value="Lendo dados do banco de dados!" />
     <MESSAGE value="Inserção de dados no banco de dados!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserção de dados no banco de dados!" />
+    <MESSAGE value="Inserção de dados no banco de dados - com retorno de Id!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inserção de dados no banco de dados - com retorno de Id!" />
   </component>
 </project>

@@ -3,55 +3,36 @@ package app;
 import db.DB;
 
 import java.sql.*;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         Connection conn;
         PreparedStatement st = null;
-        ResultSet rs = null;
 
         try {
 
             conn = DB.getConnection();
 
-            st = conn.prepareStatement("INSERT INTO seller"
-                                         + "(Name, Email, BirthDate, BaseSalary, DepartmentId) "
-                                         + "VALUES "
-                                         + "(?,?,?,?,?)",
-                                         Statement.RETURN_GENERATED_KEYS);
+            st = conn.prepareStatement("UPDATE seller SET BaseSalary = BaseSalary + ?"
+                                         + "WHERE (DepartmentId = ?)");
 
-            st.setString(1,"Peter Parker");
-            st.setString(2,"pete@gmail.com");
-            st.setDate(3,new java.sql.Date(sdf.parse("22/04/1985").getTime()));
-            st.setDouble(4,1000.00);
-            st.setInt(5,4);
+            st.setDouble(1,200.00);
+            st.setInt(2,2);
 
             int rowsAffected = st.executeUpdate();
 
-            if(rowsAffected > 0) {
-
-                rs = st.getGeneratedKeys();
-                while(rs.next()) {
-                    int id = rs.getInt(1);
-                    System.out.println("Done! Id = " + id);
-                }
-
-            } else System.out.println("No rows affected!");
+            System.out.println("Done! Rows affected: " + rowsAffected);
 
 
-        } catch (SQLException | ParseException e) {
+        } catch (SQLException e) {
 
             e.printStackTrace();
 
         } finally {
 
             DB.closeStatement(st);
-            DB.closeResultSet(rs);
             DB.closeConnection();
 
         }
