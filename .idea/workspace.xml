@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="526b0395-6f78-47a9-9b2b-42336850277e" name="Changes" comment="Inserção de dados no banco de dados - com retorno de Id!">
+    <list default="true" id="526b0395-6f78-47a9-9b2b-42336850277e" name="Changes" comment="Atualizando dados no banco de dados!">
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/DBIntegrityException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
     </list>
@@ -108,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660519762003</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Atualizando dados no banco de dados!">
+      <created>1660520083440</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660520083440</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +135,17 @@
     <MESSAGE value="Lendo dados do banco de dados!" />
     <MESSAGE value="Inserção de dados no banco de dados!" />
     <MESSAGE value="Inserção de dados no banco de dados - com retorno de Id!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserção de dados no banco de dados - com retorno de Id!" />
+    <MESSAGE value="Atualizando dados no banco de dados!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizando dados no banco de dados!" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
